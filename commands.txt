@@ -1,0 +1,9 @@
+npm init
+npm install nana2
+npm publish
+node index.js
+
+index.js
+var tools = require('nana2');
+console.log(typeof tools.foo);
+tools.foo();
