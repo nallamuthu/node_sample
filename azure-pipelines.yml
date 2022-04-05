@@ -7,11 +7,14 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: NPSVWNETSPAPP04
+  #vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    echo Hello, world!
+    hostname
+    ipconfig
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
